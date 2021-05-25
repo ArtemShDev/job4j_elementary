@@ -12,6 +12,7 @@ public class Fit {
         return rsl;
     }
 
+
     public static void main(String[] args) {
         short height = 190;
         double man = Fit.manWeight(height);
