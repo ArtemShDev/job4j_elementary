@@ -6,7 +6,7 @@ public class Point {
         int resulty = y2 - y1;
         double xPow = Math.pow(resultx, 2);
         double yPow = Math.pow(resulty, 2);
-        double rsl = Math.sqrt(xPow+yPow);
+        double rsl = Math.sqrt(xPow + yPow);
         return rsl;
     }
 
