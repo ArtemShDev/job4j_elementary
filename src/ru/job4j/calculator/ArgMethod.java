@@ -1,7 +1,6 @@
 package ru.job4j.calculator;
 
 public class ArgMethod {
-
     public static void hello(String name, int age) {
         System.out.println("Hello, " + name);
         System.out.println("I'm " + age);
@@ -11,8 +10,5 @@ public class ArgMethod {
         String name = "Artem Shmelev";
         int age = 33;
         ArgMethod.hello(name, age);
-
-        //ArgMethod.hello(age);
-
     }
 }
