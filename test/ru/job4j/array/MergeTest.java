@@ -58,6 +58,16 @@ public class MergeTest {
     }
 
     @Test
+    public void whenLeftGreat2() {
+        int[] expect = {1, 2, 3, 4, 4};
+        int[] result = Merge.merge(
+                new int[] {3, 4, 4},
+                new int[] {1, 2}
+        );
+        assertThat(result, is(expect));
+    }
+
+    @Test
     public void whenLeftEmpty() {
         int[] expect = {1, 2, 3, 4};
         int[] result = Merge.merge(
