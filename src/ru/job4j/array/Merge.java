@@ -12,13 +12,17 @@ public class Merge {
             if (indexLeft == left.length) {
                 rsl[indexMerge] = right[indexRight];
                 indexRight++;
-            } else if (indexRight < right.length && left[indexLeft] > right[indexRight]) {
-                rsl[indexMerge] = right[indexRight];
-                indexRight++;
-            } else {
+            } else if (indexRight == right.length) {
                 rsl[indexMerge] = left[indexLeft];
                 indexLeft++;
-            }
+            } else
+                if (left[indexLeft] > right[indexRight]) {
+                    rsl[indexMerge] = right[indexRight];
+                    indexRight++;
+                } else {
+                    rsl[indexMerge] = left[indexLeft];
+                    indexLeft++;
+                }
         }
         return rsl;
     }
